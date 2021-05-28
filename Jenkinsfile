@@ -29,7 +29,7 @@ pipeline{
                 ok "Yes, we should."
                 submitter "alice,bob"
                 parameters {
-                    string(name: 'PERSON', defaultValue: 'Mr Zelar', description: 'Who should I say hello to?')
+                    string(name: 'PERSON', defaultValue: 'Mr slave', description: 'Who should I say hello to?')
                 } }
             steps{
                 sh "echo ${PROJECT_NAME}"
