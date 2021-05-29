@@ -8,7 +8,7 @@ pipelineJob('CI Pipelines/frontend-ci'){
             'scm'(class:'hudson.plugins.git.GitSCM',plugin:'git') {
                 'userRemoteConfigs' {
                     'hudson.plugins.git.UserRemoteConfig' {
-                        'url'('https://github.com/ramaprasadjenkins/frontend.git')
+                        'url'('https://github.com/zs-ramaprasad/frontend.git')
 
                     }
                 }
@@ -29,7 +29,7 @@ pipelineJob('CI Pipelines/users-ci'){
             'scm'(class:'hudson.plugins.git.GitSCM',plugin:'git') {
                 'userRemoteConfigs' {
                     'hudson.plugins.git.UserRemoteConfig' {
-                        'url'('https://github.com/ramaprasadjenkins/users.git')
+                        'url'('https://github.com/zs-ramaprasad/users.git')
 
                     }
                 }
@@ -51,7 +51,7 @@ pipelineJob('CI Pipelines/login-ci'){
             'scm'(class:'hudson.plugins.git.GitSCM',plugin:'git') {
                 'userRemoteConfigs' {
                     'hudson.plugins.git.UserRemoteConfig' {
-                        'url'('https://github.com/ramaprasadjenkins/login.git')
+                        'url'('https://github.com/zs-ramaprasad/login.git')
 
                     }
                 }
@@ -76,7 +76,7 @@ pipelineJob('CI Pipelines/todo-ci'){
             'scm'(class:'hudson.plugins.git.GitSCM',plugin:'git') {
                 'userRemoteConfigs' {
                     'hudson.plugins.git.UserRemoteConfig' {
-                        'url'('https://github.com/ramaprasadjenkins/todo.git')
+                        'url'('https://github.com/zs-ramaprasad/todo.git')
 
                     }
                 }
@@ -86,7 +86,7 @@ pipelineJob('CI Pipelines/todo-ci'){
                     }
                 }
             }
-            'scriptPath'('jenkinsfile')
+            'scriptPath'('Jenkinsfile')
             'lightweight'(true)
         }
     }
