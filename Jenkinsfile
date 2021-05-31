@@ -8,14 +8,14 @@ pipeline{
     }
 
      parameters {
-        string(name: 'COMPONENT', defaultValue: 'Mr slave', description: 'Who should I say hello to?')
+        string(name: 'COMPONENT', defaultValue: 'Mr slave', description: '?')
         text(name: 'COMMENT', defaultValue: '', description: 'Enter some information about the person')
         booleanParam(name: 'FORCE_DEPLOY', defaultValue: true, description: 'Toggle this value')
         choice(name: 'ENV', choices: ['DEV', 'QA', 'PROD'], description: 'Pick something')
         password(name: 'PASSWORD', defaultValue: 'SECRET', description: 'Enter a password')
     }
       tools{
-            maven "mvn-3.6"
+            maven "mvn-3.6"Who should I say hello to
 
     }
 
