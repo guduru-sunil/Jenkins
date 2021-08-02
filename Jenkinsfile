@@ -141,9 +141,12 @@ pipeline {
       }
     }
   }
-  post {
-    always {
-      cleanWs()
-    }
+  post { 
+        always { 
+            echo 'I will always say Hello!'
+        }
+        aborted {
+            echo 'I was aborted'
+        }
   }
 }
