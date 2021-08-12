@@ -51,9 +51,9 @@ def call(Map params = [:]) {
                         prepare.nexus(COMPONENT)
                     }
                 }
-            }
+            } 
 
-stage('Deploy to Dev Env') {
+           stage('Deploy to Dev Env') {
                 steps {
                     script {
                         get_branch = "env | grep GIT_BRANCH | awk -F / '{print \$NF}' | xargs echo -n"
